@@ -6,4 +6,5 @@ test('renders learn react link', () => {
   const { getByText } = render(<App />);
   const linkElement = getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
+  expect(linkElement.innerHTML).toBe("html that is not there");
 });
